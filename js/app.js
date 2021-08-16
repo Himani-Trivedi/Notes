@@ -80,7 +80,7 @@ function showNotes() {
 
     noteObj.forEach(function(element,index){
         let title= new Date();
-        let final_title=title.getDate() + "-" + title.getMonth() + "-" + title.getFullYear() + "<br>" + title.getHours() + ":" + title.getMinutes() + ":" + title.getSeconds();
+        let final_title=title.getDate() + "-" + (title.getMonth() +1) + "-" + title.getFullYear() + "<br>" + title.getHours() + ":" + title.getMinutes() + ":" + title.getSeconds();
        html+= `    
             <div class="noteCard m-2 card" style="width: 18rem;">
             <div class="card-body">
